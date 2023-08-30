@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2-23",
+    "bleno": "npm:@abandonware/bleno@^0.6.1"
+  }
+}

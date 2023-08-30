@@ -1,0 +1,212 @@
+<server-configuration name="Rewalk Mpb">
+   <service name="Operational" uuid="7d8923f0-fb2d-4a2c-80ed-898559dee4d2">
+      <characteristic name="Request Control" uuid="1d446420-9d37-4b49-b0a5-c39fd65c00ce">
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+      </characteristic>
+      <characteristic name="Request Control Ack" uuid="16eea816-c677-4183-83b8-779543f0da30">
+         <descriptor configure="CCCD"/>
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+         <property name="INDICATE"/>
+      </characteristic>
+      <characteristic name="Requested Mode" uuid="fc652c64-c871-482c-8192-c76e3de787b7">
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+      </characteristic>
+      <characteristic name="Current Mode" uuid="fbcc116c-7e14-4ceb-ab77-c70d8a1b7be7">
+         <descriptor configure="CCCD"/>
+         <permission name="READ"/>
+         <property name="READ"/>
+         <property name="INDICATE"/>
+      </characteristic>
+   </service>
+   <service name="Sys Info" uuid="38db9ea0-0382-43e9-bdf3-3bd467c59ec5">
+      <characteristic name="Watch Battery" uuid="e2a38bc0-4b7e-458e-8947-c886dc48fa42">
+         <descriptor configure="CCCD"/>
+         <permission name="READ_ENCRYPTED"/>
+         <property name="READ"/>
+         <property name="INDICATE"/>
+      </characteristic>
+      <characteristic name="Crutch Battery" uuid="35c5d164-d345-47d4-9b0b-1e2467cbd92b">
+         <descriptor configure="CCCD"/>
+         <permission name="READ_ENCRYPTED"/>
+         <property name="READ"/>
+         <property name="INDICATE"/>
+      </characteristic>
+   </service>
+   <service name="Sizing" uuid="740261fc-e34a-47bc-93a7-d1ac303fa79d">
+      <characteristic name="Params" uuid="a8410cdb-7bf2-46f1-a0db-3149417cd54f">
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+      </characteristic>
+      <characteristic name="Ack" uuid="4f5a558e-d5ae-4dff-ad76-57dc0a106bec">
+         <permission name="READ"/>
+         <property name="READ"/>
+      </characteristic>
+   </service>
+   <service name="Stand" uuid="c98c7c95-469a-4420-80b8-ba2d34e7c5f9">
+      <characteristic name="Params" uuid="7459c5f1-f81d-430d-af04-e0c43cdab44f">
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+      </characteristic>
+      <characteristic name="Ack" uuid="d53c1cac-86af-40df-921e-48f4f7d0eeda">
+         <permission name="READ"/>
+         <property name="READ"/>
+      </characteristic>
+   </service>
+   <service name="Walking" uuid="d4bc9819-5205-4dcc-aeb5-1a6def3c99ce">
+      <characteristic name="Params" uuid="218c4fe4-854f-4458-be7f-2491e4ebc02e">
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+      </characteristic>
+      <characteristic name="Ack" uuid="417112e5-4bbc-495c-82e1-437714bf1736">
+         <permission name="READ"/>
+         <property name="READ"/>
+      </characteristic>
+   </service>
+   <service name="Stairs" uuid="967af632-2ede-45a3-a904-7eb847a8da50">
+      <characteristic name="Params" uuid="87aa6f38-d408-4cf7-9ea3-46cb422d3ec3">
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+      </characteristic>
+      <characteristic name="Ack" uuid="aaad2382-74a0-4793-b30c-9a59b60b797f">
+         <permission name="READ"/>
+         <property name="READ"/>
+      </characteristic>
+   </service>
+   <service name="User" uuid="42efcae2-92df-4909-bfe6-17af0bdf85f1">
+      <characteristic name="Id" uuid="bb608e57-8ed4-4700-bfc3-bc332433829d">
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+      </characteristic>
+      <characteristic name="Gender" uuid="c685540a-9c23-480f-85fb-abc0ee8193ef">
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+      </characteristic>
+      <characteristic name="Height" uuid="06cf1c97-be81-4b34-ab10-77fbed43adaa">
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+      </characteristic>
+      <characteristic name="Weight" uuid="3af8836e-27dd-459e-b7bb-5f23f47e6720">
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+      </characteristic>
+      <characteristic name="Idack" uuid="6a451871-9656-4da4-adbd-e139f0556a3b">
+         <permission name="READ"/>
+         <property name="READ"/>
+      </characteristic>
+      <characteristic name="Genderack" uuid="95ec1125-07bd-4a1e-a500-8cb82b90bcdc">
+         <permission name="READ"/>
+         <property name="READ"/>
+      </characteristic>
+      <characteristic name="HeightAck" uuid="87f3b38d-03f8-4f3f-b3f4-8dc01fbbea8c">
+         <permission name="READ"/>
+         <property name="READ"/>
+      </characteristic>
+      <characteristic name="WeightAck" uuid="13e1521b-1983-4ab7-b885-91c839d19368">
+         <permission name="READ"/>
+         <property name="READ"/>
+      </characteristic>
+   </service>
+   <service name="Message" uuid="1e143c5f-8d27-410e-ac8c-89fd11c91c41">
+      <characteristic name="App Version" uuid="9e2196ed-07ef-42a9-b602-314cd88e99ef">
+         <permission name="WRITE"/>
+         <property name="WRITE"/>
+      </characteristic>
+      <characteristic name="Message" uuid="54a87f06-56fa-481b-8353-f15f9d919456">
+         <descriptor configure="CCCD"/>
+         <permission name="READ"/>
+         <property name="READ"/>
+         <property name="INDICATE"/>
+      </characteristic>
+      <characteristic name="Connection Finished" uuid="9a8e0935-6d14-414f-a1e8-83d01dd3d2a0">
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+      </characteristic>
+      <characteristic name="clearError" uuid="43be827d-4644-4dee-8f0c-415c80984c18">
+         <descriptor configure="CCCD"/>
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+         <property name="INDICATE"/>
+      </characteristic>
+   </service>
+   <service name="Device Info" uuid="d49c97dd-7ad5-4aa8-950b-5d1f063bd180">
+      <characteristic name="Battery" uuid="1da9706b-cf84-42c2-92a8-a244f32784df">
+         <descriptor configure="CCCD"/>
+         <permission name="READ"/>
+         <property name="READ"/>
+         <property name="INDICATE"/>
+      </characteristic>
+      <characteristic name="Phone Time" uuid="48aeb1ba-df0a-408e-9701-c67e9df7337b">
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+      </characteristic>
+      <characteristic name="Plug" uuid="e7c3c581-96bb-499d-b79d-ea34cc6258c2">
+         <descriptor configure="CCCD"/>
+         <permission name="READ"/>
+         <property name="READ"/>
+         <property name="INDICATE"/>
+      </characteristic>
+   </service>
+   <service name="Versions" uuid="b9623a83-88f6-4fe3-805c-4b9bba603893">
+      <characteristic name="WcuVersion" uuid="c979edd7-b0d2-4e07-b74d-92562b8a8237">
+         <descriptor configure="CCCD"/>
+         <permission name="READ"/>
+         <property name="READ"/>
+         <property name="INDICATE"/>
+      </characteristic>
+      <characteristic name="CcuVersion" uuid="25ad612a-dc6a-4dfd-ba23-fa3ae07a7a58">
+         <descriptor configure="CCCD"/>
+         <permission name="READ"/>
+         <property name="READ"/>
+         <property name="INDICATE"/>
+      </characteristic>
+      <characteristic name="BleVersion" uuid="25f7c20a-9499-49a3-a6f5-29c7315e0e38">
+         <permission name="READ"/>
+         <property name="READ"/>
+      </characteristic>
+      <characteristic name="StVersion" uuid="3a7a60f6-711d-4058-9f59-80802ece573d">
+         <permission name="READ"/>
+         <property name="READ"/>
+      </characteristic>
+      <characteristic name="DspVersion" uuid="667348cd-3bbd-4085-9c0d-0fd179ce8e1d">
+         <permission name="READ"/>
+         <property name="READ"/>
+      </characteristic>
+      <characteristic name="DspVersion" uuid="9e2196ed-07ef-42a9-b602-314cd88e99ef">
+         <permission name="READ"/>
+         <permission name="WRITE"/>
+         <property name="READ"/>
+         <property name="WRITE"/>
+      </characteristic>
+   </service>
+</server-configuration>
